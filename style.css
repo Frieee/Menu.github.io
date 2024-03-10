@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  body {
+    
+    height: 100vh;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+  
+   header .navbar {
+    display: flex;
+    align-items: center;
+    width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+    background-color: white;
+    border-radius: 20px;
+    
+   }
+  
+   .navbar .logo {
+    height: 100px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: sticky;
+    margin-left: 50px;
+   }
+  
+   .navbar .logo span {
+    color: pink;
+   }
+   
+   .navbar .logo:hover {
+    color: pink;
+   }
+  
+   .navbar .menu-links {
+    color: black;
+    display: flex;
+    gap: 40px;
+    margin-right: 1000px;
+   }
+  
+   .navbar a {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: grey;
+  }
+
+  .store {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: all 0.3 ease;
+  }
+
+  .store:hover {
+    transform: scale(1.1);
+  }
+ 
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 50px;
+    grid-row-gap: 60px;
+  }
+
+  .item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 30px;
+  }
+
+  .item img:hover {
+    transform: scale(1.1);
+  }
+
+  .item h4 {
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .item button {
+    padding: 7px 30px;
+    border: none;
+    outline: none;
+    background: darkcyan;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    transition: 0.2s all;
+  }
+
+  .item button:hover {
+    transform: scale(1.04);
+  }
